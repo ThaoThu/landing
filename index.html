@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Học Tiếng Đức Online</title>
+    <!-- Link Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link to AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Học Tiếng Đức Online</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#courses">Khóa Học</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#teachers">Giảng Viên</a></li>
+          <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <h2 data-aos="fade-down" data-aos-duration="1000">
+        Khám Phá Khóa Học Tiếng Đức Online
+      </h2>
+      <p data-aos="fade-up" data-aos-duration="1000">
+        Học tiếng Đức từ cơ bản đến nâng cao với phương pháp trực tuyến linh
+        hoạt!
+      </p>
+      <button onclick="location.href='#courses'">Xem Khóa Học</button>
+    </section>
+
+    <section id="courses" class="courses">
+      <h2 data-aos="fade-up" data-aos-duration="1000">
+        Khóa Học Của Chúng Tôi
+      </h2>
+      <div
+        class="courses-container"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div class="course" data-aos="fade-up" data-aos-duration="1500">
+          <img src="img/2.png" alt="Khóa học A1" />
+          <h3>Khóa Học A1</h3>
+          <p>Khởi đầu dễ dàng với tiếng Đức.</p>
+          <button>Đăng Ký</button>
+        </div>
+        <div class="course" data-aos="fade-up" data-aos-duration="1500">
+          <img src="img/2.png" alt="Khóa học A2" />
+          <h3>Khóa Học A2</h3>
+          <p>Phát triển khả năng giao tiếp cơ bản.</p>
+          <button>Đăng Ký</button>
+        </div>
+        <div class="course" data-aos="fade-up" data-aos-duration="1500">
+          <img src="img/2.png" alt="Khóa học B1" />
+          <h3>Khóa Học B1</h3>
+          <p>Cải thiện kỹ năng sử dụng tiếng Đức trong giao tiếp.</p>
+          <button>Đăng Ký</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 data-aos="fade-up" data-aos-duration="1500">Giới Thiệu</h2>
+      <p>
+        Khóa học tiếng Đức online của chúng tôi giúp bạn học tập hiệu quả, linh
+        hoạt và tiện lợi. Với phương pháp học trực tuyến, bạn có thể học ở bất
+        kỳ đâu và bất kỳ khi nào!
+      </p>
+    </section>
+
+    <section id="teacher" class="teacher">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Giới Thiệu Giảng Viên</h2>
+      <div class="teacher-profile" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="img/3.jpg" alt="Giảng viên" />
+        <h3>Vì tinh tú H97</h3>
+        <p>
+          Giảng viên với hơn 5 năm kinh nghiệm giảng dạy tiếng Đức. Tôi chuyên
+          dạy tiếng Đức cho người mới bắt đầu và có phương pháp học giao tiếp
+          rất hiệu quả. Mục tiêu của tôi là giúp học viên tự tin sử dụng tiếng
+          Đức trong đời sống hàng ngày.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 data-aos="fade-up" data-aos-duration="1500">Liên Hệ</h2>
+      <form>
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Thông điệp:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Học Tiếng Đức Online | Tất cả quyền lợi được bảo lưu.</p>
+    </footer>
+    <script>
+      AOS.init({
+        easing: "ease-out-back", // Cách thức chuyển động hiệu ứng
+        once: true, // Mỗi phần tử chỉ hiển thị một lần khi cuộn qua
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
