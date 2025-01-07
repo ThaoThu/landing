@@ -22,18 +22,23 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <h1>Học Tiếng Đức Online</h1>
+      <div class="header-container">
+        <div class="logo">
+          <h1>Học Tiếng Đức Online</h1>
+        </div>
+        <nav class="navbar">
+          <ul class="menu">
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#courses">Khóa học</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home">Trang Chủ</a></li>
-          <li><a href="#courses">Khóa Học</a></li>
-          <li><a href="#about">Giới Thiệu</a></li>
-          <li><a href="#teachers">Giảng Viên</a></li>
-          <li><a href="#contact">Liên Hệ</a></li>
-        </ul>
-      </nav>
     </header>
 
     <section id="home" class="hero">
@@ -119,10 +124,23 @@
     <footer>
       <p>&copy; 2025 Học Tiếng Đức Online | Tất cả quyền lợi được bảo lưu.</p>
     </footer>
+
     <script>
+      $(document).ready(function () {
+        // Toggle menu visibility on hamburger click
+        $(".hamburger").on("click", function () {
+          $(".navbar").toggleClass("active");
+        });
+
+        // Hide menu when a menu item is clicked
+        $(".menu li a").on("click", function () {
+          $(".navbar").removeClass("active");
+        });
+      });
+
       AOS.init({
         easing: "ease-out-back", // Cách thức chuyển động hiệu ứng
-        once: true, // Mỗi phần tử chỉ hiển thị một lần khi cuộn qua
+        // Mỗi phần tử chỉ hiển thị một lần khi cuộn qua
       });
     </script>
     <script src="script.js"></script>
